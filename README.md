@@ -195,7 +195,17 @@ In this part, we change the loss function to the soft Dice loss to see if it can
 
 #### 1. Results
 
-In this part, we use another indicator **accuracy** to evaluate the performance of the model. We use
+In this part, we use another indicator **accuracy** to evaluate the performance of the model. 
+
+The definition of accuracy is: 
+$\text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}}$
+
+Where:
+
+- $\text{TP}$ (True Positives) is the number of pixels correctly identified as positive.
+- $\text{TN}$ (True Negatives) is the number of pixels correctly identified as negative.
+- $\text{FP}$ (False Positives) is the number of pixels incorrectly identified as positive.
+- $\text{FN}$ (False Negatives) is the number of pixels incorrectly identified as negative.
 
 Following is the segmentation accuracy of the two models with cross-entropy loss and soft Dice loss
 
