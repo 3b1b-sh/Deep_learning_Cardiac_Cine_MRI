@@ -41,10 +41,8 @@ What is slightly different from the model above is that the output channel of ou
 
 #### 2. Loss function
 
-We use the cross-entropy loss as our loss function. cross-entropy loss is a widely used loss function in machine learning, particularly in classification problems. It measures the performance of a classification model by comparing the predicted probability distribution with the true probability distribution. Suppose $\hat{y}_i$ is our predicted probability distribution of position $i$ and $y_i$ is the real probability distribution, the cross-entropy loss is calculated by
-$$
-J=-\sum\limits_{i=1}^ny_i\log\hat{y}_i+(1-y)\log(1-\hat{y})
-$$
+We use the cross-entropy loss as our loss function. cross-entropy loss is a widely used loss function in machine learning, particularly in classification problems. It measures the performance of a classification model by comparing the predicted probability distribution with the true probability distribution. Suppose $\hat{y_i}$  is our predicted probability distribution of position $i$ and $y_i$ is the real probability distribution, the cross-entropy loss is calculated by
+$J=-\sum\limits_{i=1}^ny_i\log\hat{y}_i+(1-y)\log(1-\hat{y})$
 
 #### 3. Training settings
 
