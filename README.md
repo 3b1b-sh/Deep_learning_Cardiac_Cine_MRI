@@ -57,7 +57,7 @@ We use the Dice coefficient to evaluate the performance of our model.
 
 The dice coefficient is a measure of the similarity between two probability distributions. It ranges from 0 to 1, where 0 indicates no similarity and 1 indicates perfect similarity.
 
-**The calculation of the Dice coefficient is as following: $ \text{Dice Coefficient} = \frac{2 \times |X \cap Y|}{|X| + |Y|} $**
+**The calculation of the Dice coefficient is as follows:  Dice Coefficient = $\frac{2 \times |X \cap Y|}{|X| + |Y|} $**
 
 
 
@@ -68,7 +68,7 @@ Following are the Dice coefficients of LV, RV, and MYO for all testing slices
 | **Standard deviation** | 0.0114 | 0.0156 | 0.0388 |
 
 
-Training loss and evaluation loss are as following:
+Training loss and evaluation loss are as follows:
 
 | Training loss                                             |
 | --------------------------------------------------------- |
@@ -104,7 +104,7 @@ To improve the segmentation performance, we consider some modifications to the U
 
 ### Strategy 1: U-Net without short-cut connection and cross-entropy loss
 
-In this part, we remove the short-cut connection in the U-Net and retrain the abated U-Net following the same procedure of training the U-Net in step (a).
+In this part, we remove the short-cut connection in the U-Net and retrain the abated U-Net following the same procedure of training the original U-Net.
 
 #### 1. Results
 
@@ -133,7 +133,7 @@ Training loss and evaluation loss of U-Net without short-cut connection are as f
 
 #### 1. data augmentations
 
-We add several methods of data argumentation as following
+We add several methods of data argumentation as follows:
 
 1. **Random Horizontal Flip**
 2. **Random Rotation**
